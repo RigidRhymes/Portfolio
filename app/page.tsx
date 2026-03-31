@@ -1,14 +1,20 @@
 import React from 'react'
 import Header from "@/components/Header";
 import Hero from '@/components/Hero';
+import Info from '@/components/Info';
+import Skills from '@/components/Skills';
+import Projects from '@/components/Projects';
 
 
 
 const Page = () => {
     return (
-        <div className='p-4' id='hero'>
+        <div>
             <Header />
             <Hero />
+            <Info />
+            <Skills />
+            <Projects />
         </div>
     )
 }

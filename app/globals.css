@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "shadcn/tailwind.css";
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -61,12 +61,20 @@
 }
 
 .tertiary{
-  color: #7DF9FF
+  color: #7DF9FF;
+}
+
+.neutral{
+  background: #002B36;
+}
+
+.main{
+  background: #0F172A;
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: #0F172A;
+  --foreground:rgb(243, 244, 247);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);

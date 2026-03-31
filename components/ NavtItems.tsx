@@ -15,7 +15,7 @@ const NavtItems = () => {
     }
 
     return (
-        <ul className='hidden lg:flex flex-row gap-2 font-normal text-xs text-blue-100'>
+        <ul className='flex flex-col sm:flex-row p-2 sm:gap-6 gap-2 font-normal text-xs text-blue-100'>
             {NAV_ITEMS.map(({href, label}) => (
                 <li key={href}>
                     <Link href={href} className={`hover:text-blue-300 transition-colors ${isActive(href) ? 'primary' : ''}`}>
