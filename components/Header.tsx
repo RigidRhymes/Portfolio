@@ -6,7 +6,7 @@ import photo from '@/assets/photo.jpg'
 
 const Header = () => {
     return (
-        <div className='mt-4 items-center sticky top-0 z-50 main px-6'>
+        <div className='mt-4 items-center sticky top-0 z-50 main px-6 overflow-hidden'>
             <div className='justify-between w-full flex flex-row'>
                 <div className='flex gap-2 items-center'>
                     <div className='sm:hidden flex'>
