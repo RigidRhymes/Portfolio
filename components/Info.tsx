@@ -5,7 +5,7 @@ import React from 'react'
 
 const Info = () => {
   return ( 
-    <div className='mb-12  w-full h-60 bg-gray-800 mt-16 px-6 flex items-start justify-center flex-col overflow-hidden'>
+    <div className='mb-12 hidden md:block sm:block  w-full h-60 bg-gray-800 mt-16 px-6 flex items-start justify-center flex-col overflow-hidden'>
         <p className='mt-4 primary font-poppins-100 text-xs'>PROFILE SUMMARY</p>
       <motion.div
           initial={{opacity: 0, y: 20}}

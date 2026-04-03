@@ -44,9 +44,9 @@ const Foundation = () => {
             transition={{duration: 1, ease: "easeOut"}}
             viewport={{once: true, amount: 0.3}}
 
-            className=' w-full h-100 overflow-hidden mb-12'>
-            <div className='px-6 w-full flex'>
-                <div className='mt-4 gap-4 w-full ' style={{ display: "grid", gridTemplateColumns: "1fr 1fr"}}>
+            className=' w-full h-auto mb-12 '>
+            <div className='px-6 w-full flex flex-col sm:flex-row'>
+                <div className='mt-4 gap-4 w-full  foundation'>
 
                     {/*Left Column*/}
                     <div className=' flex flex-col '>
@@ -60,22 +60,22 @@ const Foundation = () => {
 
                         <div className='flex items-start justify-between mt-2 text-xs text-wrap flex-col gap-2'>
                         <div className='flex flex-row gap-4'>
-                            <div className='black h-8 p-2 items-center justify-center gap-2 rounded-md flex flex-row text-xs'>
+                            <div className='fontStyle black'>
                                 <Icon icon='award' className='primary'/>
                                 Advanced Data Analytics (CISCO)
                             </div>
-                            <div className='black h-8 p-2 items-center justify-center gap-2 rounded-md flex flex-row text-xs'>
+                            <div className='fontStyle black'>
                                 <Icon icon='award' className='primary'/>
                                 FreeCOdeCamps Full-Stack
                             </div>
                         </div>
 
                             <div className='flex flex-row gap-4'>
-                                <div className='black h-8 p-2 items-center justify-center gap-2 rounded-md flex flex-row text-xs'>
+                                <div className='fontStyle black'>
                                     <Icon icon='award' className='primary'/>
                                     DIT Computer Engineering & Networking
                                 </div>
-                                <div className='black h-8 p-2 items-center justify-center gap-2 rounded-md flex flex-row text-xs'>
+                                <div className='fontStyle black'>
                                     <Icon icon='award' className='primary'/>
                                     Macrosolutions Desktop Publishing
                                 </div>

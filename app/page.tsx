@@ -8,6 +8,7 @@ import Experiences from "@/components/Experiences";
 import Foundation from "@/components/Foundation";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import MobileFooter from "@/components/MobileFooter";
 
 
 
@@ -25,6 +26,7 @@ const Page = () => {
                 <Contact />
                 <Footer />
             </div>
+                <MobileFooter />
         </div>
     )
 }

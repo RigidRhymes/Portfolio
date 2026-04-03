@@ -21,17 +21,17 @@ const Skills = () => {
 
 
   return (
-    <div className='mt-12 w-full flex flex-col mb-16' id='skills'>
+    <div className='skills-div' id='skills'>
       <div className='px-6 mb-12'>
-        <div>
-          <p className='primary font-poppins-100 text-[10px] '>TECHNICAL EXPERTISE</p>
+        <div className='flex justify w-full techy'>
+          <p className='primary font-poppins-100 '>TECHNICAL EXPERTISE</p>
         </div>
-        <div className='flex justify-between items-center w-full'>
-          <h2 className='text-[28px] font-poppins-700 mt-2'>SkillEcosystem</h2>
-          <div className='text-[10px] text-gray-300 w-100 font-light text-right'>A comprehensive toolkit refined through years of cross-disciplinary work in vibrant tech and creative landscape</div>
+        <div className='flex justify-between sm:flex-row flex-col items-center w-full'>
+          <h2 className='text-[28px] ecosys font-poppins-700 mt-2'>SkillEcosystem</h2>
+          <div className='skilly'>A comprehensive toolkit refined through years of cross-disciplinary work in vibrant tech and creative landscape</div>
         </div>
       </div>
-      <div className='flex gap-4 flex-wrap text-xs items-center justify-center'>
+      <div className='skills-card'>
       {CARD_ITEMS.map((item, index) => {
          const offset = randomOffsets[index]
           return (

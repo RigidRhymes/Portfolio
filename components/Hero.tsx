@@ -51,10 +51,15 @@ const Hero = () => {
                 Full-Stack Developer <br />
                 <span className='primary'>UI/UX Designer</span>
             </div>
-            <div className='text-wrap text-xs mt-4 flex flex-wrap'>Creating digital experience through the lense of a mathematical architect and the soul of a publisher. Specializing in high performance web applications and data-driven visual storytelling.</div>
-            
+            <div className='text-wrap text-xs mt-4 flex flex-wrap hero-text text-gray-400 sm:text-white '>Creating digital experience through the lense of a mathematical architect and the soul of a publisher. Specializing in high performance web applications and data-driven visual storytelling.</div>
+
+                  <div className='mt-6 flex hero-button gap-4'>
+                      <a href='/emmanuelAka-cv.pdf' className='bgColor p-2 flex items-center justify-center text-black rounded-md text-xs'>Download CV</a>
+                      <a href='#projects' className='hero-button-2'>View Projects</a>
+                  </div>
+
             <div className='sm:flex mt-6 gap-3 hidden '>
-                <div className='bg-gray-800 w-42 h-12 cursor-pointer flex-row rounded-md items-center flex gap-2 px-1 transform-transition ease-in-out duration-500 hover:scale-150 hover:-translate-y-1'>
+                <div className='bg-gray-800 w-42 h-12 cursor-pointer flex-row rounded-md items-center flex gap-2 px-1 transform-transition ease-in-out duration-500 hover:scale-75 hover:-translate-y-1'>
                     <Icon icon='map-pin' className='w-6 h-6 primary'/>
                     <div className='flex-col tracking-tight'>
                         <div className='text-xs text-gray-500'>LOCATION</div>
@@ -63,7 +68,7 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                 <div className='bg-gray-800 w-56 h-12 cursor-pointer flex-row rounded-md items-center flex gap-2 px-1 transform-transition ease-in-out duration-500 hover:scale-150 hover:-translate-y-1'>
+                 <div className='bg-gray-800 w-56 h-12 cursor-pointer flex-row rounded-md items-center flex gap-2 px-1 transform-transition ease-in-out duration-500 hover:scale-75 hover:-translate-y-1'>
                     <Icon icon='mail' className='w-6 h-6 primary'/>
                     <div className='flex-col tracking-tight'>
                         <div className='text-xs font-poppins-100 text-gray-500'>EMAIL</div>
@@ -73,7 +78,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                 <div className='bg-gray-800 w-42 cursor-pointer h-12 flex-row rounded-md items-center flex gap-2 px-1 transform-transition ease-in-out duration-500 hover:scale-150 hover:-translate-y-1'>
+                 <div className='bg-gray-800 w-42 cursor-pointer h-12 flex-row rounded-md items-center flex gap-2 px-1 transform-transition ease-in-out duration-500 hover:scale-75 hover:-translate-y-1'>
                     <Icon icon='github' className='w-6 h-6 primary'/>
                     <div className='flex-col tracking-tight'>
                         <div className='text-xs text-gray-500 font-poppins-100'>GIT_HUB</div>
@@ -89,16 +94,16 @@ const Hero = () => {
         {/* Right section */}
         <section className='lg:w-[50%]' ref={ref}>
             <div
-                className='w-full items-center justify-end flex relative '>
+                className='w-full items-center justify-end  relative hidden sm:flex'>
                 <div className='w-75 h-80 bg-radial from-gray-600 to-[#0F172A] drop-shadow-xl shadow-gray-900 rounded-lg relative flex justify-center items-center overflow-hidden'>
-                    <Image src={corporate} alt='hero-image' className='w-80 h-120 '/>
+                    <Image src={corporate} alt='hero-image' className='w-80 h-120 hidden sm:block'/>
 
                 </div>
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9}}
                         animate={ inView ? { opacity: 1, scale: 1 } : {}}
                         transition={{duration: 0.8}}
-                        className='absolute bottom-2 left-35 h-22 w-32 bgColor rounded-md flex-col items-center justify-center transform-transition ease-in-out duration-500 hover:scale-150 hover:-translate-y-1'>
+                        className='absolute bottom-2 left-35 h-22 w-32 bgColor rounded-md flex-col items-center justify-center transform-transition ease-in-out duration-500 hover:scale-75 hover:-translate-y-1'>
                         <div
                             className='p-2'
                         >

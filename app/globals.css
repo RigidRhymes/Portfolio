@@ -174,3 +174,71 @@
     @apply font-sans;
   }
 }
+
+.ecosys {
+  @apply flex justify-center sm:justify-start sm:text-[28px] text-center sm:text-start text-[18px]
+}
+
+.techy{
+  @apply text-[10px] justify-center sm:justify-start w-full ;
+}
+
+.skilly{
+  @apply text-[10px] text-gray-300 sm:w-100 font-light sm:text-right text-center w-full px-2 sm:px-2 mt-2 sm:mt-0;
+}
+
+.hero-button{
+  @apply flex w-full justify-between sm:hidden
+}
+
+.hero-text{
+  @apply leading-6 text-[10px] sm:text-xs text-center sm:text-start
+}
+
+.hero-button-2{
+  @apply bg-transparent border border-[#00D1FF] p-2 flex items-center justify-center rounded-md text-xs text-[#00D1FF]
+}
+
+.skills-div{
+  @apply sm:mt-12 mt-4 w-full flex flex-col mb-16
+}
+
+.skills-card{
+  @apply flex flex-row gap-4 flex-wrap text-xs items-center justify-center
+}
+
+.skills-card-card{
+  @apply rounded-lg bg-gray-800 w-80 sm:w-62 h-38 px-4 mt-4
+}
+
+.project{
+  @apply rounded-lg  bg-gray-800 relative h-full
+}
+
+.project-render{
+  @apply grid  grid-cols-3  items-stretch  justify-center   sm:justify-start   w-full  gap-2  mb-6
+}
+
+.project-grid{
+  @apply grid grid-cols-1 sm:grid-cols-3 [grid-auto-rows:1fr] sm:items-stretch
+}
+
+.foundation{
+  @apply grid grid-cols-1 sm:grid-cols-2
+}
+
+.publishing{
+  @apply grid grid-cols-1 sm:grid-cols-[1fr_2fr] gap-4 mt-4
+}
+
+.fontStyle{
+  @apply text-[10px] sm:text-xs h-8 bg-black p-2 items-center justify-center gap-2 rounded-md flex flex-row
+}
+
+.contact{
+  @apply grid grid-cols-1 sm:grid-cols-[1fr_2fr]
+}
+
+.bottom-footer{
+  @apply border-t border-gray-600
+}

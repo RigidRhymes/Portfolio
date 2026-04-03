@@ -1,13 +1,11 @@
 'use client'
 
 import React from 'react'
-import {usePathname} from "next/navigation";
 import {NAV_ITEMS} from "@/lib/constants";
 import Link from "next/link";
 import {useActiveSection} from "@/components/IntersectionObserver";
 
 const NavtItems = () => {
-    const pathname = usePathname();
 
     const activeId = useActiveSection(NAV_ITEMS.map(item => item.href.replace("#", "")))
 

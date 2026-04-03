@@ -13,7 +13,7 @@ const SkillsCard = ({title, description, icon}: SkillCardProps) => {
 
   const items = description.split(",").map(item => item.trim())
   return (
-    <div className='rounded-lg bg-gray-800 w-62 h-38 px-4 mt-4'>
+    <div className='skills-card-card'>
         <Icon icon={icon} className='w-6 h-6 primary mt-4'/>
         <div className='text-sm'>{title}</div>
         <ul className='space-y-1 flex flex-wrap gap-1 mt-2'>

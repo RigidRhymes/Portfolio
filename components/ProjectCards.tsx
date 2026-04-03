@@ -15,16 +15,14 @@ const ProjectCards = ({ title, description, tools, image }: ProjectCardProps) =>
     const items = tools.split(",").map(item => item.trim())
 
     // Define spans for each layout type
-
-
     return (
-        <div className='rounded-lg  bg-gray-800 relative h-full'>
+        <div className='project'>
             <div className='flex items-center justify-center  project-image'>
                 {image && (
                     <Image src={image} alt="title" objectFit="cover" className='rounded-md items-center justify-center'/>
                 )}
             </div>
-            <div className='z-50 right-5 p-4 ' style={{position: "absolute", bottom: "30px", left: "10%"}}>
+            <div className='z-10 right-5 p-4 ' style={{position: "absolute", bottom: "30px", left: "10%"}}>
 
                 <ul className="flex flex-wrap gap-2">
                     {items.map((desc, i) => (
