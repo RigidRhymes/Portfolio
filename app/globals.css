@@ -242,3 +242,7 @@
 .bottom-footer{
   @apply border-t border-gray-600
 }
+
+.manager{
+  @apply bg-black sm:mt-2 mt-1 sm:w-[650px] w-72 px-2 p-2 text-xs h-32 rounded-md
+}

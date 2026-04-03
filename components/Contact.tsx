@@ -94,7 +94,7 @@ const Contact = () => {
                                 value={formData.message}
                                 onChange={handleChange}
                                 name="message"
-                                className='bg-black sm:mt-2 mt-1 sm:w-150 w-72 px-2 p-2 text-xs h-32 rounded-md'/>
+                                className='manager'/>
                         </div>
                     </div>
                     <div className='flex justify-center mb-2 mt-4'>
