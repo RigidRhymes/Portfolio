@@ -11,11 +11,11 @@ const UserDropDown = () => {
   <DropdownMenu>
   <DropdownMenuTrigger asChild>
     <Button variant='ghost' >
-        <Icon icon="menu" className='primary w-6 h-6' />
+        <Icon icon="menu" className='primary w-6 h-6 ' />
     </Button>
   </DropdownMenuTrigger>
   <DropdownMenuContent className='primary'>
-    <DropdownMenuLabel className='neutral'>
+    <DropdownMenuLabel className='main'>
         <nav>
             <NavtItems />
         </nav>
