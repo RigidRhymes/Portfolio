@@ -244,5 +244,5 @@
 }
 
 .manager{
-  @apply bg-black sm:mt-2 mt-1 sm:w-[650px] w-72 px-2 p-2 text-xs h-32 rounded-md
+  @apply bg-black sm:mt-2 mt-1 md:w-350 sm:w-72 w-72 px-2 p-2 text-xs h-32 rounded-md
 }

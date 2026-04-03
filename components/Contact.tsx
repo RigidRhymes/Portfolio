@@ -76,14 +76,14 @@ const Contact = () => {
                                value={formData.name}
                                onChange={handleChange}
                                type="text"
-                               name="name" className='h-10 w-72 p-4 rounded-md bg-black px-3 text-sm mt-1' placeholder='Your Name' />
+                               name="name" className='h-10 md:w-72 sm:w-32 w-72  p-4 rounded-md bg-black px-3 text-sm mt-1' placeholder='Your Name' />
                        </div>
                        <div className='sm:mt-2 mt:1 flex flex-col'>
                            <label className='text-gray-400 text-xs'>EMAIL</label>
                            <input
                                value={formData.email}
                                onChange={handleChange}
-                               type="email" name="email" className='h-10 w-72 p-4 rounded-md bg-black px-3 text-sm mt-1' placeholder='Your email' />
+                               type="email" name="email" className='h-10 sm:w-32 md:w-72 w-72 p-4 rounded-md bg-black px-3 text-sm mt-1' placeholder='Your email' />
                        </div>
                    </div>
 
@@ -98,7 +98,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='flex justify-center mb-2 mt-4'>
-                        <button type='submit' className='sm:w-150 w-72 p-2 bgColor rounded-md cursor-pointer text-black'>Send Inquiry</button>
+                        <button type='submit' className='md:w-150 sm:w-72 w-72 p-2 bgColor rounded-md cursor-pointer text-black'>Send Inquiry</button>
                         {status && <p className='text-xs text-gray-400 text-center absolute top-0 left-0'>{status}</p>}
                     </div>
                     </form>

@@ -7,7 +7,6 @@
     <list default="true" id="5ef1fa2b-d287-439f-b00d-8e9e02e4b879" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleaned-repo" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Contact.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +104,7 @@
       <workItem from="1775074442892" duration="29388000" />
       <workItem from="1775137781715" duration="26511000" />
       <workItem from="1775166397504" duration="2080000" />
-      <workItem from="1775200690661" duration="36136000" />
+      <workItem from="1775200690661" duration="36780000" />
     </task>
     <servers />
   </component>
