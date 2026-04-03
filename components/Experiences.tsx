@@ -26,6 +26,7 @@ const Experiences = () => {
     return (
         <div className='flex-1 mt-16 mb-12 w-full '
              ref={containerRef}
+             id='experiences'
         >
             <div className='px-6 w-full'>
                 <p className='primary text-xs tracking-widest'>PROFESSIONAL JOURNEY</p>

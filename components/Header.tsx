@@ -21,7 +21,7 @@ const Header = () => {
                     <Image src={photo} alt='profile-photo' width={32} height={32} className='rounded-full' />
                 </div>
                 <div className='hidden sm:block'>
-                    <button className='bgColor cursor-pointer p-1 rounded-md text-xs items-center justify-center text-black'>Download CV</button>
+                    <a href='/emmanuelAka-cv.pdf' className='bgColor cursor-pointer p-1 rounded-md text-xs items-center justify-center text-black'>Download CV</a>
                 </div>
             </div>
         </div>

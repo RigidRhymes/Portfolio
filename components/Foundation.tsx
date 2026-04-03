@@ -5,7 +5,6 @@ import Icon from 'feather-icons-react'
 import book1 from "../assets/book1.png"
 import Image from "next/image";
 import book2 from "../assets/book2.png"
-import {transform} from "motion-dom";
 import { motion } from 'framer-motion';
 
 interface IProps {
@@ -13,7 +12,7 @@ interface IProps {
     children?: React.ReactNode;
     index: number;
 }
-const Foundation = ({ card, children, index}: IProps) => {
+const Foundation = () => {
     const  cardRefs = useRef<(HTMLDivElement | null)[]>([])
 
     const handleMouseMove = (index: number) => (e: React.MouseEvent) => {
@@ -46,7 +45,7 @@ const Foundation = ({ card, children, index}: IProps) => {
             viewport={{once: true, amount: 0.3}}
 
             className=' w-full h-100 overflow-hidden mb-12'>
-            <div className='px-6 w-full flex '>
+            <div className='px-6 w-full flex'>
                 <div className='mt-4 gap-4 w-full ' style={{ display: "grid", gridTemplateColumns: "1fr 1fr"}}>
 
                     {/*Left Column*/}
@@ -115,7 +114,7 @@ const Foundation = ({ card, children, index}: IProps) => {
                                        <div
                                            ref={(el) => {cardRefs.current[0] = el}} onMouseMove={handleMouseMove(0)} onMouseLeave={handleMouseLeave(0)}
                                            style={{perspective: "800px"}}
-                                           className='w-150 h-150 bg-gray-800 rounded-md flex items-center justify-center transition-transform duration-200 ease-out will-change-transform perspective-600' >
+                                           className=' bg-gray-800 rounded-md flex items-center justify-center transition-transform duration-200 ease-out will-change-transform perspective-600' >
                                            <Image src={book2} alt='book display' objectFit='contain' style={{ width: '100px', height:'100px'}}/>
                                        </div>
                                    </div>

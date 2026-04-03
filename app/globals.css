@@ -1,11 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "tailwindcss/theme";
 
-@source "./components/**/*.{js,ts,jsx,tsx}";
-@source "./app/**/*.{js,ts,jsx,tsx}";
 
 
 @custom-variant dark (&:is(.dark *));
+
 
 @theme inline {
   --color-background: var(--background);
@@ -51,6 +51,15 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+
+.project-image{
+  opacity: 0.3;
+}
+
+.project-image:hover{
+  opacity: 1;
+}
+
 .bgColor{
   background: #00D1FF;
 }
@@ -71,6 +80,9 @@
   background: #002B36;
 }
 
+.contact {
+  background: #192540;
+}
 .main{
   background: #0F172A;
 }

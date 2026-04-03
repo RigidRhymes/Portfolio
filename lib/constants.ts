@@ -4,11 +4,11 @@ import mag from "../assets/mag.png"
 import dash from "../assets/dash.png"
 
 export const NAV_ITEMS = [
-    {href: "/", label: "Hero"},
-    {href: "skills", label: "Skills"},
-    {href: "/projects", label: "Projects"},
-    {href: '/experiences', label: "Experiences"},
-    {href: "/contact", label: "Contact"},
+    {href: "#hero", label: "Hero"},
+    {href: "#skills", label: "Skills"},
+    {href: "#projects", label: "Projects"},
+    {href: '#experiences', label: "Experiences"},
+    {href: "#contact", label: "Contact"},
 ]
 
 export const CARD_ITEMS = [

@@ -7,7 +7,7 @@ import {motion} from "framer-motion"
 
 const Projects = () => {
     return (
-        <div className='mb-12 px-6'>
+        <div className='mb-12 px-6' id="projects">
             <div className="flex items-center justify-center mb-6">
                 <p className="text-[10px] primary tracking-widest">SELECTED WORKS</p>
             </div>
