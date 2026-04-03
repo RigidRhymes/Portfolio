@@ -17,7 +17,7 @@ const NavtItems = () => {
                 return (
                 <li key={href}>
                     <Link href={href}
-                          className={`hover:text-blue-300 transition-colors ${isActive ? 'primary border-b-2 border-blue-600' : ''}`}>
+                          className={`hover:text-blue-300 transition-colors duration-300 ${isActive ? 'primary border-b-2 border-blue-600 transition-all duration-300 ease-in-out' : ''}`}>
                         {label}
                     </Link>
                 </li>

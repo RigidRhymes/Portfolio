@@ -12,7 +12,7 @@ export const useActiveSection = (ids: string[]) => {
                     }
                 });
             },
-            {rootMargin: "-20% 0px -60% 0px", threshold: 0.1}
+            {rootMargin: "-20% 0px -60% 0px", threshold: 0}
         );
 
         ids.forEach((id) => {

@@ -2,7 +2,7 @@ import React from 'react'
 import NavtItems from "@/components/ NavtItems";
 import UserDropDown from './UserDropDown';
 import Image from 'next/image';
-import photo from '@/assets/photo.jpg'
+import corp from "../assets/corporate.png"
 
 const Header = () => {
     return (
@@ -18,7 +18,7 @@ const Header = () => {
                     <NavtItems />
                 </nav>
                 <div className='flex sm:hidden'>
-                    <Image src={photo} alt='profile-photo' width={32} height={32} className='rounded-full' />
+                    <Image src={corp} alt='profile-photo' width={32} height={32} className='rounded-full ' />
                 </div>
                 <div className='hidden sm:block'>
                     <a href='/emmanuelAka-cv.pdf' className='bgColor cursor-pointer p-1 rounded-md text-xs items-center justify-center text-black'>Download CV</a>
