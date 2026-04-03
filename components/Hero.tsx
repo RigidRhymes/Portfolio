@@ -6,7 +6,7 @@ import Image from 'next/image'
 import corporate from '@/assets/corporate.png'
 import {motion, useAnimation} from 'framer-motion'
 import {useInView} from "react-intersection-observer";
-import BackgroundEffect from "@/components/BackgroundEffect";
+
 
 
 const Hero = () => {
@@ -44,7 +44,7 @@ const Hero = () => {
             <div className='flex items-center gap-2 text-xs text-blue-400 sm:bg-gray-800  w-62 p-2 rounded-full sm:justify-center'>
                 <div className='rounded-full w-2 h-2 bg-blue-300 text-sm animate-pulse'/> AVAILABLE FOR NEW PROJECTS
             </div>
-            <h1  className='text-[60px] font-bold  hidden sm:block'>Emmanuel <span className='primary'>Aka</span></h1>
+            <h1  className='hero-text-2'>Emmanuel <span className='primary'>Aka</span></h1>
 
             <div className='text-sm sm:text-xl text-blue-200 hidden sm:block'>Full-Stack Developer | UI/UX Designer | Data Analyst</div>
             <div className='text-3xl sm:hidden px-2 '>
@@ -58,8 +58,8 @@ const Hero = () => {
                       <a href='#projects' className='hero-button-2'>View Projects</a>
                   </div>
 
-            <div className='sm:flex mt-6 gap-3 hidden '>
-                <div className='bg-gray-800 w-42 h-12 cursor-pointer flex-row rounded-md items-center flex gap-2 px-1 transform-transition ease-in-out duration-500 hover:scale-75 hover:-translate-y-1'>
+            <div className='hidden sm:flex flex-wrap flex-row gap-2'>
+                <div className='hero-cards'>
                     <Icon icon='map-pin' className='w-6 h-6 primary'/>
                     <div className='flex-col tracking-tight'>
                         <div className='text-xs text-gray-500'>LOCATION</div>
@@ -68,7 +68,7 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                 <div className='bg-gray-800 w-56 h-12 cursor-pointer flex-row rounded-md items-center flex gap-2 px-1 transform-transition ease-in-out duration-500 hover:scale-75 hover:-translate-y-1'>
+                 <div className='hero-cards'>
                     <Icon icon='mail' className='w-6 h-6 primary'/>
                     <div className='flex-col tracking-tight'>
                         <div className='text-xs font-poppins-100 text-gray-500'>EMAIL</div>
@@ -78,10 +78,10 @@ const Hero = () => {
                     </div>
                 </div>
 
-                 <div className='bg-gray-800 w-42 cursor-pointer h-12 flex-row rounded-md items-center flex gap-2 px-1 transform-transition ease-in-out duration-500 hover:scale-75 hover:-translate-y-1'>
+                 <div className='hero-cards'>
                     <Icon icon='github' className='w-6 h-6 primary'/>
                     <div className='flex-col tracking-tight'>
-                        <div className='text-xs text-gray-500 font-poppins-100'>GIT_HUB</div>
+                        <div className='hero-card-text'>GIT_HUB</div>
                         <div className='text-xs font-poppins-100'>
                             rigid_rhymes
                         </div>
@@ -103,7 +103,7 @@ const Hero = () => {
                         initial={{ opacity: 0, scale: 0.9}}
                         animate={ inView ? { opacity: 1, scale: 1 } : {}}
                         transition={{duration: 0.8}}
-                        className='absolute bottom-2 left-35 h-22 w-32 bgColor rounded-md flex-col items-center justify-center transform-transition ease-in-out duration-500 hover:scale-75 hover:-translate-y-1'>
+                        className='absolute bottom-2 left-35 h-22 w-32 bgColor rounded-md flex-col items-center justify-center transform-transition ease-in-out duration-500 hover:scale-125 hover:-translate-y-1'>
                         <div
                             className='p-2'
                         >
