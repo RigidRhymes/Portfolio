@@ -2,10 +2,10 @@ import express from "../assets/express.png"
 import string from "../assets/no-strings.png"
 import mag from "../assets/mag.png"
 import dash from "../assets/dash.png"
-import {faEnvelope, faTools, faFolder, faChartBar, faPhone} from "@fortawesome/free-solid-svg-icons"
+import {faHome, faTools, faFolder, faChartBar, faPhone} from "@fortawesome/free-solid-svg-icons"
 
 export const NAV_ITEMS = [
-    {href: "#hero", label: "Hero", icon: faEnvelope},
+    {href: "#hero", label: "Hero", icon: faHome},
     {href: "#skills", label: "Skills", icon: faTools},
     {href: "#projects", label: "Projects", icon: faFolder},
     {href: '#experiences', label: "Experiences", icon: faChartBar},
