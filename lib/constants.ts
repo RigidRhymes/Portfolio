@@ -2,7 +2,7 @@ import express from "../assets/express.png"
 import string from "../assets/no-strings.png"
 import mag from "../assets/mag.png"
 import dash from "../assets/dash.png"
-import {faHome, faTools, faFolder, faChartBar, faPhone} from "@fortawesome/free-solid-svg-icons"
+import {faHome, faTools, faFolder, faChartBar, faPhone, faDashboard, faToolbox, faDatabase} from "@fortawesome/free-solid-svg-icons"
 
 export const NAV_ITEMS = [
     {href: "#hero", label: "Hero", icon: faHome},
@@ -31,7 +31,7 @@ export const WORKS_ITEMS = [
 ]
 
 export const EXPERIENCE_ITEMS = [
-    {title: "Creative Director & Full-Stack Developer", sub: "SIGN DIGITALL WORLD / DIGITALL BOOKS", description: "Leading end-to-end development of digital publishing platforms and educational tools, Architecting scalable database structures for high-traffic content management., Mentoring junior developers and designers in best practices for UI/UX", year: "2018 - Present"},
-    {title: "Lead Operations & Tech Strategist", sub: "THE GIRL FROM IPANEMA CAFE", description: "Modernized inventory and POS system through custom internal tools., Developed digital marketing strategies that increases customer engagement by 40%", year: "2012 - 2018"},
-    {title: "Technical Analys", sub: "LEGACY SYSTEMS CORP", description: "Early-career focus on data migration -system maintenance -and frontend optimization", year: "2008 - 2012"}
+    {title: "Creative Director & Full-Stack Developer", sub: "SIGN DIGITALL WORLD / DIGITALL BOOKS", description: "Leading end-to-end development of digital publishing platforms and educational tools, Architecting scalable database structures for high-traffic content management., Mentoring junior developers and designers in best practices for UI/UX", year: "2018 - Date", icon: faDashboard},
+    {title: "Lead Operations & Tech Strategist", sub: "THE GIRL FROM IPANEMA CAFE", description: "Modernized inventory and POS system through custom internal tools., Developed digital marketing strategies that increases customer engagement by 40%", year: "2012 - 2018", icon: faToolbox},
+    {title: "Technical Analys", sub: "LEGACY SYSTEMS CORP", description: "Early-career focus on data migration -system maintenance -and frontend optimization", year: "2008 - 2012", icon: faDatabase}
 ]
