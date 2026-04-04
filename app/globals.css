@@ -231,7 +231,7 @@
 }
 
 .project-grid{
-  @apply sm:grid flexsm:grid-cols-3 [grid-auto-rows:1fr] sm:items-stretch
+  @apply sm:grid flex sm:grid-cols-3 [grid-auto-rows:1fr] sm:items-stretch
 }
 
 .project-text{
