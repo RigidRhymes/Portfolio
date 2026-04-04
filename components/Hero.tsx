@@ -92,7 +92,7 @@ const Hero = () => {
         </section>
 
         {/* Right section */}
-        <section className='lg:w-[50%]' ref={ref}>
+        <section className='sm:w-[50%]' ref={ref}>
             <div
                 className='w-full items-center justify-end  relative hidden sm:flex'>
                 <div className='w-75 h-80 bg-radial from-gray-600 to-[#0F172A] drop-shadow-xl shadow-gray-900 rounded-lg relative flex justify-center items-center overflow-hidden'>
