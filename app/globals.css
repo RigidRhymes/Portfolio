@@ -196,7 +196,7 @@
 }
 
 .hero-cards{
-  @apply bg-gray-800 flex-wrap w-auto cursor-pointer h-12 flex-row rounded-md items-center flex gap-2 px-1 transform transition ease-in-out duration-500 hover:scale-125 z-20 hover:translate-y-1
+  @apply bg-gray-800 flex-wrap w-auto cursor-pointer h-12 flex-row rounded-md items-center flex gap-2 px-1 transform transition ease-in-out duration-500 hover:scale-110 z-20 hover:translate-y-1
 }
 
 .hero-card-text{
@@ -204,7 +204,7 @@
 }
 
 .hero-text-2{
-  @apply lg:text-[60px] md:text-[5px] sm:text-[30px] font-bold  hidden md:block
+  @apply lg:text-[60px] md:text-[50px] text-[40px] sm:text-[30px] font-bold hidden sm:block
 }
 .hero-button-2{
   @apply bg-transparent border border-[#00D1FF] p-2 flex items-center justify-center rounded-md text-xs text-[#00D1FF]
@@ -231,7 +231,15 @@
 }
 
 .project-grid{
-  @apply grid grid-cols-1 sm:grid-cols-3 [grid-auto-rows:1fr] sm:items-stretch
+  @apply sm:grid flexsm:grid-cols-3 [grid-auto-rows:1fr] sm:items-stretch
+}
+
+.project-text{
+  @apply z-10 right-5 sm:p-4 absolute bottom-30 sm:left-10 left-0
+}
+
+.project-cap{
+  @apply px-2 py-1 bg-gray-700 text-gray-200 rounded-sm md:text-xs text-[10px] font-bold
 }
 
 .foundation{
@@ -255,5 +263,12 @@
 }
 
 .manager{
-  @apply bg-black sm:mt-2 mt-1 md:w-150 sm:w-72 w-72 px-2 p-2 text-xs h-32 rounded-md
+  @apply bg-black sm:mt-2 mt-1 lg:w-150 md:w-72 sm:w-72 w-72 px-2 p-2 text-xs h-32 rounded-md
+}
+.contact-button{
+  @apply lg:w-150 md:w-72 sm:w-72 w-72 p-2 rounded-md cursor-pointer text-black bg-[#00D1FF]
+}
+
+.contact-input{
+  @apply h-10 sm:w-32 md:w-32 lg:w-72 w-72 p-4 rounded-md bg-black px-3 text-sm mt-1
 }

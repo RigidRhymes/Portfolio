@@ -25,8 +25,8 @@ export const CARD_ITEMS = [
 
 export const WORKS_ITEMS = [
     {title: "DataVis Analytics", description: "A high-performance 3D dashboard for real-time traffic monitoring and analysis", tools: "REACT THREE, THREE FIBER, SUPABASE", image: dash},
-    {title: "DigitAll Books", description: "Reimagining digital literacy and access for West African learners.", tools: "EDUCATIONAL PLATFORM", image: express},
-    {title: "XpressExams", description: "Educational mobile app, with access to online tutorials, CBT and Live functions", tools: "MOBILE & CONSUMER", image: string},
+    {title: "DigitAll Books", description: "Dating App for young people, sign-up meet up repeat and have fun no strings attached.", tools: "DATING APP", image: string},
+    {title: "XpressExams", description: "Educational mobile app, with access to online tutorials, CBT and Live functions", tools: "MOBILE & CONSUMER", image: express},
     {title: "The Editorial Archive", description: "A showcase of over 50+ book covers and branding identities designed for regional authors.", tools: "PUBLISHING, ADOBE SUITE", image: mag},
 ]
 

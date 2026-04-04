@@ -83,7 +83,7 @@ const Hero = () => {
                     <div className='flex-col tracking-tight'>
                         <div className='hero-card-text'>GIT_HUB</div>
                         <div className='text-xs font-poppins-100'>
-                            rigid_rhymes
+                            rigidrhymes
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@ const Hero = () => {
                         initial={{ opacity: 0, scale: 0.9}}
                         animate={ inView ? { opacity: 1, scale: 1 } : {}}
                         transition={{duration: 0.8}}
-                        className='absolute bottom-2 left-35 h-22 w-32 bgColor rounded-md flex-col items-center justify-center transform-transition ease-in-out duration-500 hover:scale-125 hover:-translate-y-1'>
+                        className='absolute bottom-2 left-35 h-22 w-32 bgColor rounded-md flex-col items-center justify-center transform-transition ease-in-out duration-500 hover:scale-110 hover:-translate-y-1'>
                         <div
                             className='p-2'
                         >

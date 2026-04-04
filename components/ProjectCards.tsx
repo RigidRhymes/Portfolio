@@ -22,13 +22,13 @@ const ProjectCards = ({ title, description, tools, image }: ProjectCardProps) =>
                     <Image src={image} alt="title" objectFit="cover" className='rounded-md items-center justify-center'/>
                 )}
             </div>
-            <div className='z-10 right-5 p-4 ' style={{position: "absolute", bottom: "30px", left: "10%"}}>
+            <div className='project-text' style={{position: "absolute", bottom: "30px", left: "10%"}}>
 
                 <ul className="flex flex-wrap gap-2">
                     {items.map((desc, i) => (
                         <span
                             key={i}
-                            className="px-2 py-1 bg-gray-700 text-gray-200 rounded-sm text-xs"
+                            className="project-cap"
                         >
             {desc}
           </span>
