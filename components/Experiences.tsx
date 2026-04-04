@@ -7,6 +7,7 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {motion, useScroll, useTransform} from "framer-motion";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -15,99 +16,14 @@ const Experiences = () => {
     const [colors, setColors] = useState<string[]>([])
     const containerRef = useRef<HTMLDivElement>(null)
 
+    const { scrollYProgress } = useScroll({
+        target: containerRef,
+        offset: ["start center", "end end"]
+    })
 
 
-    useGSAP(() => {
-        gsap.utils.toArray('.timeline-card').forEach((card:any) =>{
-            console.log(card)
-            gsap.from(card, {
-                xPercent: -100,
-                opacity: 0,
-                transformOrigin: 'left left',
-                duration: 1,
-                ease: "power2.inOut",
-                scrollTrigger:{
-                    trigger: card,
-                    start: 'top 80%'
-                }
-            })
-        })
+    const lineScale = useTransform(scrollYProgress, [0, 1], [0, 1])
 
-        gsap.utils.toArray('.timeline-segment').forEach((segment: any) => {
-            const ring = segment.querySelector('.timeline-ring')
-            const line = segment.querySelector('.gradient-line')
-            const ringColor = ring.dataset.color
-
-            gsap.from(line, {
-                scaleY: 0,
-                transformOrigin: 'top',
-                duration: 1,
-                ease: 'power2.inOut',
-                scrollTrigger:{
-                    trigger: ring,
-                    start: 'top center',
-                    end: 'bottom center',
-                    scrub: true,
-                },
-            })
-
-            const nextSegment = segment.nextElementSibling
-            if(nextSegment){
-                const nextRing = nextSegment.querySelector('.timeline-ring')
-                const nextColor = nextRing.dataset.color
-                gsap.to(nextSegment.querySelector('.gradient-line'), {
-                    backgroundColor: nextColor,
-                    scrollTrigger: {
-                        trigger: nextRing,
-                        start: 'top center',
-                        toggleActions: 'play none none reverse'
-                    }
-                })
-            }
-        })
-
-        gsap.to('.gradient-line',{
-            transformOrigin: 'bottom bottom',
-            ease: 'power1.inOut',
-            scrollTrigger:{
-                trigger: containerRef.current,
-                start: 'top 80%',
-                end: 'bottom center',
-                onUpdate: (self) => {
-                    gsap.to('.gradient-line',{
-                        scaleY: 1 -self.progress,
-                    })
-                }
-
-            }
-        })
-        gsap.utils.toArray('.expText').forEach((text:any) =>{
-            gsap.from(text, {
-                xPercent: 0,
-                opacity: 0,
-                duration: 1,
-                ease: "power2.inOut",
-                scrollTrigger:{
-                    trigger: containerRef.current,
-                    start: 'top 60%'
-                }
-            })
-
-            gsap.utils.toArray('.timeline-ring').forEach((ring:any, i) => {
-                const ringColor = ring.dataset.color
-                gsap.to('.gradient-line', {
-                    background: ringColor,
-                    scrollTrigger: {
-                        trigger: ring,
-                        start: 'top center',
-                        end: 'bottom center',
-                        toggleActions: 'play reverse play reverse',
-                    },
-                })
-            })
-        }, containerRef)
-
-    }, [])
 
     const randomColor = () => {
         const colors = [
@@ -131,16 +47,29 @@ const Experiences = () => {
             <div className='px-6 w-full'>
                 <p className='primary text-xs tracking-widest'>PROFESSIONAL JOURNEY</p>
                 <div className='relative flex flex-col items-start px-1 mt-6 '>
-                    <div className='gradient-line w-3 absolute left-4 top-0 h-full rounded'/>
+                    <motion.div
+                        className='gradient-line w-3 absolute top-0 left-4 h-full rounded'
+                        style={{scaleY: lineScale, originY: 0}}
+                    />
 
-                    <div className='flex flex-col gap-16 ml-2 -mt-2 expText w-full'>
+                    <div className='flex flex-col gap-6 ml-2 -mt-2 w-full'>
                         {EXPERIENCE_ITEMS.map((item, index) => {
                             return (
-                                <div key={index} className='timeline-segment flex flex-col items-start gap-6 w-full'>
-                                    <div className='timeline-ring flex items-center justify-center z-50 timelin-ringer' style={{backgroundColor: colors[index], border: colors[index] ? `2px solid ${colors[index]}` : undefined}} data-color={colors[index]}>
+                                <div key={index} className='flex flex-col items-start gap-6 w-full'>
+                                    <motion.div
+                                       initial={{opacity: 0, y: 50}}
+                                       whileInView={{opacity: 1, y: 0}}
+                                       transition={{duration: 0.6, ease: 'easeOut'}}
+                                       viewport={{once: false, amount: 0.3}}
+                                        className='timeline-ring flex items-center justify-center z-50 timelin-ringer' style={{backgroundColor: colors[index], border: colors[index] ? `2px solid ${colors[index]}` : undefined}} data-color={colors[index]}>
                                         <FontAwesomeIcon icon={item.icon} className={`text-sm`}/>
-                                    </div>
-                                <div className='timeline-card flex justify-between items-start text-white text-xs flex-1 w-full main'>
+                                    </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0, x: 100}}
+                                    whileInView={{opacity: 1, x: 0}}
+                                    transition={{ duration: 0.6, ease: 'easeOut'}}
+                                    viewport={{once: false, amount: 0.3}}
+                                    className='timeline-card flex justify-between items-start text-white text-xs flex-1 w-full p-4 rounded-lg'>
                                     <div className='flex flex-col gap-4 ' style={{width:'80%'}}>
                                         <p className='text-white text-[12px] px-4 sm:text-[18px]' style={{color:colors[index]}}>{item.title}</p>
                                         <p className='text-white text-[10px] px-4 sm:text-[18px]'>{item.sub}</p>
@@ -153,7 +82,7 @@ const Experiences = () => {
                                         </ul>
                                     </div>
                                     <div className='primary '>{item.year}</div>
-                                </div>
+                                </motion.div>
                             </div>
                         )})}
                     </div>
@@ -162,4 +91,5 @@ const Experiences = () => {
         </div>
     )
 }
+// @ts-ignore
 export default Experiences
