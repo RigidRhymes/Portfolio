@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ef1fa2b-d287-439f-b00d-8e9e02e4b879" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/projects/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ListedProjects.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Experiences.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Experiences.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/Hero.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +71,7 @@
       <recent name="C:\Users\Rhymes\Desktop\myportfolio\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rhymes\Desktop\myportfolio\app" />
       <recent name="C:\Users\Rhymes\Desktop\myportfolio\public" />
     </key>
   </component>
@@ -106,7 +112,9 @@
       <workItem from="1775137781715" duration="26511000" />
       <workItem from="1775166397504" duration="2080000" />
       <workItem from="1775200690661" duration="38609000" />
-      <workItem from="1775255689194" duration="36771000" />
+      <workItem from="1775255689194" duration="45678000" />
+      <workItem from="1775401600514" duration="3915000" />
+      <workItem from="1775468646171" duration="7168000" />
     </task>
     <servers />
   </component>

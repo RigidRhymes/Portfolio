@@ -5,7 +5,6 @@ import React, {useEffect, useRef, useState} from 'react'
 import {EXPERIENCE_ITEMS} from "@/lib/constants";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import gsap from 'gsap'
-import { useGSAP } from '@gsap/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {motion, useScroll, useTransform} from "framer-motion";
 

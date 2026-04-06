@@ -6,6 +6,8 @@ import Image from 'next/image'
 import corporate from '@/assets/corporate.png'
 import {motion, useAnimation} from 'framer-motion'
 import {useInView} from "react-intersection-observer";
+import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 
@@ -58,35 +60,43 @@ const Hero = () => {
                       <a href='#projects' className='hero-button-2'>View Projects</a>
                   </div>
 
+               <div className='flex flex-col'>
             <div className='hidden sm:flex flex-wrap flex-row gap-2'>
-                <div className='hero-cards'>
-                    <Icon icon='map-pin' className='w-6 h-6 primary'/>
-                    <div className='flex-col tracking-tight'>
-                        <div className='text-xs text-gray-500'>LOCATION</div>
-                        <div className='text-sm font-poppins-100'>
-                            Lagos, Nigeria
-                        </div>
-                    </div>
-                </div>
-                 <div className='hero-cards'>
-                    <Icon icon='mail' className='w-6 h-6 primary'/>
-                    <div className='flex-col tracking-tight'>
-                        <div className='text-xs font-poppins-100 text-gray-500'>EMAIL</div>
-                        <div className='text-xs font-poppins-100'>
-                            akaofemmanuel@gmail.com
-                        </div>
-                    </div>
-                </div>
+                   <div className='hero-cards'>
+                       <Icon icon='map-pin' className='w-6 h-6 primary'/>
+                       <div className='flex-col tracking-tight'>
+                           <div className='text-xs text-gray-500'>LOCATION</div>
+                           <div className='text-sm font-poppins-100'>
+                               Lagos, Nigeria
+                           </div>
+                       </div>
+                   </div>
+                   <div className='hero-cards'>
+                       <Icon icon='mail' className='w-6 h-6 primary'/>
+                       <div className='flex-col tracking-tight'>
+                           <div className='text-xs font-poppins-100 text-gray-500'>EMAIL</div>
+                           <div className='text-xs font-poppins-100'>
+                               akaofemmanuel@gmail.com
+                           </div>
+                       </div>
+                   </div>
 
-                 <div className='hero-cards'>
-                    <Icon icon='github' className='w-6 h-6 primary'/>
-                    <div className='flex-col tracking-tight'>
-                        <div className='hero-card-text'>GIT_HUB</div>
-                        <div className='text-xs font-poppins-100'>
-                            rigidrhymes
-                        </div>
-                    </div>
-                </div>
+                   <div className='hero-cards'>
+                       <Icon icon='github' className='w-6 h-6 primary'/>
+                       <div className='flex-col tracking-tight'>
+                           <div className='hero-card-text'>GIT_HUB</div>
+                           <div className='text-xs font-poppins-100'>
+                               RigidRhymes
+                           </div>
+                       </div>
+                   </div>
+                  <div className='mt-6 w-full flex items-start'>
+                      <a href='/projects' className='bg-gray-800 rounded-md mt-4 p-2 primary flex items-center justify-center gap-2 '>View Projects
+                      <FontAwesomeIcon icon={faChevronRight}  className='rounded-full bg-gray-700 p-1'/>
+                      </a>
+                  </div>
+
+               </div>
             </div>
         </motion.div>
         </section>
@@ -95,7 +105,7 @@ const Hero = () => {
         <section className='sm:w-[50%]' ref={ref}>
             <div
                 className='w-full items-center justify-end  relative hidden sm:flex'>
-                <div className='w-75 h-80 bg-radial from-gray-600 to-[#0F172A] drop-shadow-xl shadow-gray-900 rounded-lg relative flex justify-center items-center overflow-hidden'>
+                <div className='sm:w-75 sm:h-80 md:w-100 md:h-120 bg-radial from-gray-600 to-[#0F172A] drop-shadow-xl shadow-gray-900 rounded-lg relative flex justify-center items-center overflow-hidden'>
                     <Image src={corporate} alt='hero-image' className='w-80 h-120 hidden sm:block'/>
 
                 </div>

@@ -12,7 +12,7 @@ const Header = () => {
                     <div className='sm:hidden flex'>
                         <UserDropDown />
                     </div>
-                <div className='primary'>Emmanuel Aka</div>
+                    <div className='primary'><a href='/'>Emmanuel Aka</a></div>
                 </div>
                  <nav className='hidden sm:block'>
                     <NavtItems />
